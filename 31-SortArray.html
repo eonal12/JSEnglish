@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    var numbers = [12, 56, 14, 33, 89, 67, 22];
+    var temp;
+
+    for(var i = 0; i<numbers.length; i++){
+
+        for(var j = i + 1; j<numbers.length; j++ ){
+
+            if(numbers[i]<numbers[j]){
+
+                temp = numbers[j];
+
+                numbers[j] = numbers[i];
+
+                numbers[i] = temp;
+            }
+
+        }
+
+    }
+
+    console.log(numbers);
+
+    </script>
+</body>
+</html>

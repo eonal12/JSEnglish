@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    const number = prompt("Enter a number");
+    const mod3 = number%3==0;
+    const mod5 = number%5==0;   
+
+
+    if(mod3 && mod5){
+
+        alert("Number is divisable by 3 and 5");
+
+    }else if(mod3){
+
+        alert("Number is divisable by 3");
+
+    }else if(mod5){
+
+        alert("Number is divisable by 5");
+
+    }else{
+
+        alert("Number is not divisable by 3 and 5");
+
+    }
+
+    //DRY: Do NOT Repeat Yourself
+
+
+    </script>
+
+</body>
+</html>

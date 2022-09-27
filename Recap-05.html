@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*
+     Create a function, from a given array find all pairs
+     whose sum is a given number,
+
+     {4,6,5,-10,8,5,20} ===> 10
+     4 + 6 = 10
+     5 + 5 = 10
+     -10 + 20 = 10
+     */
+
+     let arr=[4, 6, 5, 10, 9, 15, 0, 6, -2, 17, 1];
+
+     findPairs(arr, 19);
+
+
+     function findPairs(arr, number){
+
+        for(var i = 0; i<arr.length; i++){
+
+            for(var j = i+1; j<arr.length; j++ ){
+
+                if(arr[i]+arr[j] == number){
+
+                    console.log(arr[i]+" + "+arr[j] +" = "+ number);
+
+                }
+
+            }
+
+        }
+
+     }
+    </script>
+</body>
+</html>

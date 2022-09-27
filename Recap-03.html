@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    /*Ask user to enter first name, middle name and last name as one single String,
+    then print the first character of middle name and last name.
+    e.g. Mark Hansel Twain==> HT ----- Ali Can Kaya == CK
+    */
+
+    let str =  prompt("Enter first name, middle name and last name");
+
+    str = str.toUpperCase().trim();
+
+    let initialOfMiddleName = str.charAt(str.indexOf(" ")+1);
+
+    let initialOfLastName = str.charAt(str.lastIndexOf(" ")+1);
+
+    alert(initialOfMiddleName+initialOfLastName);
+
+    </script>
+</body>
+</html>

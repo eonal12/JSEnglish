@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let employee = [
+            { name: "Ali", bDate: 1990, salary: 4000 },
+            { name: "Veli", bDate: 1977, salary: 5000 },
+            { name: "Ayşe", bDate: 1975, salary: 5300 },
+            { name: "Fatma", bDate: 1985, salary: 4500 },
+        ];
+        console.log(employee);
+
+        var date =  new Date();
+        const currentYear = date.getFullYear();
+
+        for(var i = 0; i<employee.length; i++){
+
+            var age = currentYear - employee[i].bDate
+
+            if(age>45){
+
+                employee[i].salary = employee[i].salary * 1.30;
+
+            }else{
+
+                employee[i].salary = employee[i].salary * 1.35;
+
+            }
+
+        }
+
+        console.log(employee);
+
+    </script>
+</body>
+
+</html>

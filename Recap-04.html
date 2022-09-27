@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        /*
+           Ask user to enter two words. If the number of characters of the first word is even, 
+           then put the second word into the middle of the first word.
+           If the number of characters of first word is odd, then print on console: 
+           "You can not put second word into the middle of the first word. Because it's number of character is odd.".
+           Ex: First Word: Mary Second Word: White Result: MaWhitery
+               First Word: Nelson Second Word: Mandela Result: NelMandelason
+        */
+
+        let word1 = prompt("Enter 1st Word");
+        let word2 = prompt("Enter 2nd Word");
+
+        if (word1.length % 2 == 0) {
+
+            let firstPart = word1.substring(0, word1.length / 2);
+            let secondPart = word1.substring(word1.length/2);
+
+            alert(firstPart + word2 + secondPart);
+
+
+        } else {
+            alert("You can not put second word into the middle of the first word. Because it's number of character is odd.");
+        }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

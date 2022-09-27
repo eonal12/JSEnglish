@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function factorial(number) {
+
+            if (number >= 0) {
+
+                var product = 1;
+
+                for (var i = 1; i <= number; i++) {
+
+                    product = product * i;
+
+                }
+
+                return product;
+
+            } else {
+
+                console.log("Do not enter negative number");
+
+                return "Do not enter negative number";
+
+            }
+
+        }
+
+        var result = factorial(5);
+        console.log("result: " + result);
+
+        result = factorial(Number(prompt("Enter a number")) );
+
+        console.log(result);
+
+    </script>
+</body>
+
+</html>

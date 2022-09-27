@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var grades = {
+
+            midterm: 0,
+            final: 0,
+            avg: 0,
+            isSucces: false
+            
+        }
+
+        grades.midterm = Number(prompt("Enter midterm"));
+        grades.final = Number(prompt("Enter final"));
+        grades.avg = (grades.midterm + grades.final) / 2;
+
+        if (grades.avg >= 50) {
+
+            grades.isSucces = true;
+
+        }
+
+        console.log(grades)
+
+
+
+
+
+    </script>
+</body>
+
+</html>
